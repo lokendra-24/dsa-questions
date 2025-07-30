@@ -3,7 +3,7 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        n=len(nums)
+        
         count_0=0
         count_1=0
         count_2=0
