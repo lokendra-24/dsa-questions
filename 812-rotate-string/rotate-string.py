@@ -1,9 +1,11 @@
 class Solution:
     def rotateString(self, s: str, goal: str) -> bool:
-        if len(s)!=len(goal):
-            return False
-        double_s= s+s
-        
-        return goal in double_s
-    
+        if len(s) != len(goal):
+          return False
 
+        for i in range(len(s)):
+           s = s[1:] + s[0]  # Left rotate by 1
+           if s == goal:
+            return True
+
+        return False
